@@ -21,11 +21,11 @@ dataset_descrb = st.container()
 
 with header_content:
     st.title('Hello Friends ! , This is an End to End to Machine Learning Project :smile:')
-    first_para = '<p style="font-family:Courier; color:Black; font-size: 20px;">In this project I have developed a ML model to check that personal loan  available or not for the customer . By using the Age , Experience , Income , Family numbers count . Lets predit about it .....</p>'
+    first_para = '<p style="font-family:Courier; color:Black; font-size: 20px;">In this project I have developed a ML model to check if the personal loan available or not for the customer . By using the Age , Experience , Income , Family members count . Lets predit it .....</p>'
     st.markdown(first_para, unsafe_allow_html=True)
 
     st.header('Objective:')
-    st.text('To predict whether a liability customer will buy a personal loan or not.')
+    st.text('To predict whether a liability customer will get a personal loan or not.')
 
 with dataset_descrb:
     st.header('*Personal Loan dataset*')
@@ -48,7 +48,7 @@ with dataset_descrb:
 
 with prediction:
     st.header(""" Let's predict""")
-    third_para = '<p style="font-family:Courier; color:Black; font-size: 20px;">Enter the below values and lets check whether a liability customer will buy a personal loan or not</p>'
+    third_para = '<p style="font-family:Courier; color:Black; font-size: 20px;">Enter the values below and lets check whether a liability customer will get a personal loan or not</p>'
     st.markdown(third_para, unsafe_allow_html=True)
     a, b = st.columns(2)
     age = a.text_input('Enter your age (years):',0)
